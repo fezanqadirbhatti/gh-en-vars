@@ -4,9 +4,16 @@ on:
     branches:
       - main
       - dev
+env:
+  MONGODB_DB_NAME: sample_training
 jobs:
   test:
     environment: testing
+    env:
+      MONGODB_CLUSTER_ADDRESS: c0.gubvdhl.mongodb.net
+      MONGODB_USERNAME: fezan
+      MONGODB_PASSWORD: fqF9Q0bzsghAiIRx
+      PORT: 8080
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
