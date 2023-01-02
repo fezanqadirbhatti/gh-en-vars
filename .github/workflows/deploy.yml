@@ -38,4 +38,4 @@ jobs:
     steps:
       - name: Output information
         run: |
-          run: echo " Username ${{ env.MONGODB_USERNAME }} "
+          echo " Username ${{ env.MONGODB_USERNAME }} "
